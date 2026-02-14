@@ -48,15 +48,15 @@ int main(void) {
 	lcd_send_command(0x01);
 	my_delay(20);
 
-	print_message("Ready to learn some", 0, 0);
-	print_message("Arduino Programming", 1, 0);
+	print_message("Ready to learn", 0, 0);
+	print_message("some Arduino?", 1, 0);
 	my_delay(2000);
 
 	lcd_send_command(0x01);
 	my_delay(20);
 
-	print_message("With bare-metal C", 0, 0);
-	print_message("of course!", 1, 0);
+	print_message("With bare-metal", 0, 0);
+	print_message("C of course!", 1, 0);
 
 	// Turn on LED
 
