@@ -42,21 +42,21 @@ int main(void) {
 	// Init the LCD and print message
 	lcd_init();
 
-	print_message("Make me 3D PRINT", 0, 0);
+	print_message("Hello there!", 0, 0);
 	my_delay(2000);
 
 	lcd_send_command(0x01);
 	my_delay(20);
 
-	print_message("Please BOI", 0, 0);
-	print_message("NOW", 1, 0);
+	print_message("Ready to learn some", 0, 0);
+	print_message("Arduino Programming", 1, 0);
 	my_delay(2000);
 
 	lcd_send_command(0x01);
 	my_delay(20);
 
-	print_message("NOW", 0, 0);
-	print_message("NOW", 1, 0);
+	print_message("With bare-metal C", 0, 0);
+	print_message("of course!", 1, 0);
 
 	// Turn on LED
 
@@ -196,6 +196,7 @@ void print_message(char *s, int row, int col) {
 
 void lcd_init() {
 
+	// Initialization sequence.
 	// Wait 50 ms
 	my_delay(50);
 
